@@ -130,11 +130,12 @@ const S = 44, SEG = 180, H = 12;
 const terrainGeo = new THREE.PlaneGeometry(S, S, SEG, SEG); terrainGeo.rotateX(-Math.PI / 2);
 const noise = (x, z) => Math.sin(x * .9) * Math.cos(z * .7) * .5 + Math.sin(x * 2.3 + z * 1.7) * .25 + Math.sin(x * 5.1 - z * 4.3) * .1 + Math.sin(x * 11 + z * 9) * .04;
 const hAt = (x, z) => { const d = Math.hypot(x, z) / (S / 2); const ridge = 1 + .12 * Math.sin(Math.atan2(z, x) * 5); return Math.max(0, H * Math.pow(Math.max(0, 1 - d * 1.08 * ridge), 1.7) + noise(x * .5, z * .5) * (1.4 - d)); };
-{ const pos = terrainGeo.attributes.position, colors = []; const snow = new THREE.Color(0xf4efe6), rock = new THREE.Color(0x4b4650), moss = new THREE.Color(0x24332a), sand = new THREE.Color(0x6e6252);
+{ const pos = terrainGeo.attributes.position, colors = []; const snow = new THREE.Color(0xfaf6ee), rock = new THREE.Color(0x6b6572), moss = new THREE.Color(0x2f4a3a), sand = new THREE.Color(0x8a7a62);
   for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), z = pos.getZ(i), y = hAt(x, z); pos.setY(i, y); const t = y / H; let c; if (t > .72) c = rock.clone().lerp(snow, (t - .72) / .28); else if (t > .35) c = moss.clone().lerp(rock, (t - .35) / .37); else c = sand.clone().lerp(moss, t / .35); colors.push(c.r, c.g, c.b); }
   terrainGeo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3)); terrainGeo.computeVertexNormals(); }
 mtn.add(new THREE.Mesh(terrainGeo, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: .9, metalness: .05, flatShading: true })));
-const rimGold = new THREE.DirectionalLight(0xf2dca2, 2.2); rimGold.position.set(-10, 14, -12); mtn.add(rimGold);
+mtn.add(new THREE.HemisphereLight(0xcfd8ff, 0x3a2e1e, .9));
+const rimGold = new THREE.DirectionalLight(0xf2dca2, 3.2); rimGold.position.set(-10, 14, -12); mtn.add(rimGold);
 const moon = new THREE.PointLight(0xbfd4ff, 40, 80); moon.position.set(12, 18, 10); mtn.add(moon);
 // trees
 { const n = 1400, g = new THREE.ConeGeometry(.14, .6, 6), m = new THREE.MeshStandardMaterial({ color: 0x14261c, roughness: 1 }), im = new THREE.InstancedMesh(g, m, n), o = new THREE.Object3D(); let k = 0; while (k < n) { const a = Math.random() * Math.PI * 2, r = 7 + Math.random() * 13, x = Math.cos(a) * r, z = Math.sin(a) * r, y = hAt(x, z); if (y < .25 || y > 4.6) continue; o.position.set(x, y + .25, z); o.scale.setScalar(.5 + Math.random() * .9); o.updateMatrix(); im.setMatrixAt(k++, o.matrix); } mtn.add(im); }
@@ -146,9 +147,9 @@ for (let i = 0; i < 90; i++) { const sp = new THREE.Sprite(new THREE.SpriteMater
 const sorted = [...data.pieces].sort((a, b) => a.ils - b.ils);
 const texLoader = new THREE.TextureLoader();
 const boards = [];
-const camRad = (pm) => 19 - pm * 11, camAng = (pm) => pm * 2.4, camAlt = (pm) => pm * (H + 2.5);
+const camRad = (pm) => 20 - pm * 12, camAng = (pm) => pm * 6.0, camAlt = (pm) => pm * (H + 2.5);
 sorted.forEach((p, i) => {
-  const t = (i + .5) / sorted.length; const ang = camAng(t) + .55, rad = camRad(t) - 4.2; const x = Math.cos(ang) * rad, z = Math.sin(ang) * rad; const y = Math.max(hAt(x, z) + 1.3, camAlt(t) + .2);
+  const t = (i + .5) / sorted.length; const ang = camAng(t) + (document.documentElement.dir === 'rtl' ? -.32 : .32), rad = camRad(t) - 4.5; const x = Math.cos(ang) * rad, z = Math.sin(ang) * rad; const y = Math.max(hAt(x, z) + 1.2, camAlt(t) + .9);
   const g = new THREE.Group(); g.position.set(x, y, z);
   const tex = texLoader.load(BASE + p.img); tex.colorSpace = THREE.SRGBColorSpace;
   const pic = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.5), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); g.add(pic);
@@ -192,9 +193,9 @@ function frame() {
   }
   if (mtn.visible) {
     const pm = prog(secMtn), alt = camAlt(pm), ang = camAng(pm), rad = camRad(pm);
-    cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .5) * (rad - 4.2) * .6, alt + .6, Math.sin(ang + .5) * (rad - 4.2) * .6);
+    cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .25) * (rad - 4.5) * .5, alt + .9, Math.sin(ang + .25) * (rad - 4.5) * .5);
     clouds.children.forEach((s, i) => { s.position.x += Math.sin(t * .2 + i) * .002; });
-    let best = 0, bd = 1e9; boards.forEach((g, i) => { g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
+    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .09; const op = THREE.MathUtils.clamp(1 - (dd - .03) / .06, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
     setFocus(best); summit.rotation.y += dt * .5;
     const ti = data.tiers.reduce((acc, tr, i) => pm >= tr.alt - .08 ? i : acc, 0); if (ti !== state.tier) { state.tier = ti; renderTiers(); }
   }
