@@ -131,7 +131,12 @@
     "he": "טבעת שלוש אבנים 3 · זהב 14k · יהלום"
    },
    "video": "/media/rings/three-stones-03.mp4",
-   "img": "/media/rings/three-stones-03.jpg"
+   "img": "/media/rings/three-stones-03.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/00w4gy2Zu2571aF3Cqds42S",
+    "usd": "https://buy.stripe.com/dRmcN4dE8fVX3iNb4Sds42T",
+    "ils": "https://buy.stripe.com/14AfZg9nSdNP9Hb2ymds42U"
+   }
   },
   {
    "id": "wx-three-stones-02",
@@ -145,7 +150,12 @@
     "he": "טבעת שלוש אבנים 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/three-stones-02.mp4",
-   "img": "/media/rings/three-stones-02.jpg"
+   "img": "/media/rings/three-stones-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/5kQ7sK6bGaBD6uZeh4ds42V",
+    "usd": "https://buy.stripe.com/7sY4gyeIcbFH1aFdd0ds42W",
+    "ils": "https://buy.stripe.com/4gMaEW8jO1139Hb8WKds42X"
+   }
   },
   {
    "id": "wx-three-stones-01",
@@ -159,7 +169,12 @@
     "he": "טבעת שלוש אבנים 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/three-stones-01.mp4",
-   "img": "/media/rings/three-stones-01.jpg"
+   "img": "/media/rings/three-stones-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/eVq9ASbw04df7z33Cqds42Y",
+    "usd": "https://buy.stripe.com/7sYfZg0RmcJLf1v2ymds42Z",
+    "ils": "https://buy.stripe.com/bJebJ057C4df8D71uids430"
+   }
   },
   {
    "id": "wx-toi-et-moi-02",
@@ -173,7 +188,12 @@
     "he": "טבעת טואה א מואה 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/toi-et-moi-02.mp4",
-   "img": "/media/rings/toi-et-moi-02.jpg"
+   "img": "/media/rings/toi-et-moi-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/9B69AS57CdNP1aF3Cqds431",
+    "usd": "https://buy.stripe.com/9B628qfMg25706Bfl8ds432",
+    "ils": "https://buy.stripe.com/bJeaEW2Zu25706B3Cqds433"
+   }
   },
   {
    "id": "wx-toi-et-moi-01",
@@ -187,7 +207,12 @@
     "he": "טבעת טואה א מואה 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/toi-et-moi-01.mp4",
-   "img": "/media/rings/toi-et-moi-01.jpg"
+   "img": "/media/rings/toi-et-moi-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/6oUdR80RmcJLaLfb4Sds434",
+    "usd": "https://buy.stripe.com/dRm28qeIceRTf1va0Ods435",
+    "ils": "https://buy.stripe.com/fZu9AS2Zu9xz9Hbc8Wds436"
+   }
   },
   {
    "id": "wx-halo-04",
@@ -201,7 +226,12 @@
     "he": "טבעת הילה 4 · זהב 14k · יהלום"
    },
    "video": "/media/rings/halo-04.mp4",
-   "img": "/media/rings/halo-04.jpg"
+   "img": "/media/rings/halo-04.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/cNiaEW8jOdNPcTn4Guds437",
+    "usd": "https://buy.stripe.com/bJeaEWdE8eRT7z34Guds438",
+    "ils": "https://buy.stripe.com/bJe8wO0Rm257cTndd0ds439"
+   }
   },
   {
    "id": "wx-halo-03",
@@ -215,7 +245,12 @@
     "he": "טבעת הילה 3 · זהב 14k · יהלום"
    },
    "video": "/media/rings/halo-03.mp4",
-   "img": "/media/rings/halo-03.jpg"
+   "img": "/media/rings/halo-03.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/aFafZgbw0h015qVdd0ds43a",
+    "usd": "https://buy.stripe.com/fZu28q1VqdNPf1v4Guds43b",
+    "ils": "https://buy.stripe.com/00wcN42Zu2578D77SGds43c"
+   }
   },
   {
    "id": "wx-halo-02",
@@ -229,7 +264,12 @@
     "he": "טבעת הילה 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/halo-02.mp4",
-   "img": "/media/rings/halo-02.jpg"
+   "img": "/media/rings/halo-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/6oU7sK43y7pr6uZeh4ds43d",
+    "usd": "https://buy.stripe.com/5kQ14m8jO9xzdXra0Ods43e",
+    "ils": "https://buy.stripe.com/00wbJ043y1133iN3Cqds43f"
+   }
   },
   {
    "id": "wx-halo-01",
@@ -243,7 +283,12 @@
     "he": "טבעת הילה 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/halo-01.mp4",
-   "img": "/media/rings/halo-01.jpg"
+   "img": "/media/rings/halo-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cIcN4dE8bFH7z35Kyds43g",
+    "usd": "https://buy.stripe.com/eVqdR80Rm25706B1uids43h",
+    "ils": "https://buy.stripe.com/eVq9ASdE84df1aFgpcds43i"
+   }
   },
   {
    "id": "wx-east-west-02",
@@ -257,7 +302,12 @@
     "he": "טבעת איסט-ווסט 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/east-west-02.mp4",
-   "img": "/media/rings/east-west-02.jpg"
+   "img": "/media/rings/east-west-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/eVq6oGarW113g5zb4Sds43j",
+    "usd": "https://buy.stripe.com/bJecN40Rm39bbPj3Cqds43k",
+    "ils": "https://buy.stripe.com/14A6oG7fKcJLg5zc8Wds43l"
+   }
   },
   {
    "id": "wx-east-west-01",
@@ -271,7 +321,12 @@
     "he": "טבעת איסט-ווסט 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/east-west-01.mp4",
-   "img": "/media/rings/east-west-01.jpg"
+   "img": "/media/rings/east-west-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/cNidR89nSeRT6uZfl8ds43m",
+    "usd": "https://buy.stripe.com/7sY28q57CfVX5qVeh4ds43n",
+    "ils": "https://buy.stripe.com/dRm7sK1Vq7pr7z31uids43o"
+   }
   },
   {
    "id": "wx-pave-bis-04",
@@ -285,7 +340,12 @@
     "he": "טבעת פאווה דק 4 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-bis-04.mp4",
-   "img": "/media/rings/pave-bis-04.jpg"
+   "img": "/media/rings/pave-bis-04.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/bJe00igQkh01g5z5Kyds43p",
+    "usd": "https://buy.stripe.com/cNicN4cA439b1aF3Cqds43q",
+    "ils": "https://buy.stripe.com/9B6dR86bGdNP9Hb4Guds43r"
+   }
   },
   {
    "id": "wx-pave-bis-03",
@@ -299,7 +359,12 @@
     "he": "טבעת פאווה דק 3 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-bis-03.mp4",
-   "img": "/media/rings/pave-bis-03.jpg"
+   "img": "/media/rings/pave-bis-03.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/cNi4gybw09xzg5z2ymds43s",
+    "usd": "https://buy.stripe.com/3cI14mcA45hj6uZgpcds43t",
+    "ils": "https://buy.stripe.com/28E4gyeIc4dfbPj1uids43u"
+   }
   },
   {
    "id": "wx-pave-bis-02",
@@ -313,7 +378,12 @@
     "he": "טבעת פאווה דק 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-bis-02.mp4",
-   "img": "/media/rings/pave-bis-02.jpg"
+   "img": "/media/rings/pave-bis-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/cNi6oG7fKh013iNdd0ds43v",
+    "usd": "https://buy.stripe.com/00waEWcA4fVX9Hb3Cqds43w",
+    "ils": "https://buy.stripe.com/9B600iarW1134mRa0Ods43x"
+   }
   },
   {
    "id": "wx-pave-bis-01",
@@ -327,7 +397,12 @@
     "he": "טבעת פאווה דק 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-bis-01.mp4",
-   "img": "/media/rings/pave-bis-01.jpg"
+   "img": "/media/rings/pave-bis-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/eVqbJ02Zu39bf1v1uids43y",
+    "usd": "https://buy.stripe.com/7sY7sK8jO6lng5zb4Sds43z",
+    "ils": "https://buy.stripe.com/6oU00icA48tv06Bc8Wds43A"
+   }
   },
   {
    "id": "wx-pave-04",
@@ -341,7 +416,12 @@
     "he": "טבעת פאווה 4 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-04.mp4",
-   "img": "/media/rings/pave-04.jpg"
+   "img": "/media/rings/pave-04.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/14A14meIcaBDf1va0Ods43B",
+    "usd": "https://buy.stripe.com/eVq5kCbw08tv9Hb7SGds43C",
+    "ils": "https://buy.stripe.com/fZubJ0gQk9xz2eJ4Guds43D"
+   }
   },
   {
    "id": "wx-pave-03",
@@ -355,7 +435,12 @@
     "he": "טבעת פאווה 3 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-03.mp4",
-   "img": "/media/rings/pave-03.jpg"
+   "img": "/media/rings/pave-03.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/4gM28q0RmcJL7z32ymds43E",
+    "usd": "https://buy.stripe.com/4gM9AS8jO7pr2eJ5Kyds43F",
+    "ils": "https://buy.stripe.com/bJe6oG6bG6lnbPjb4Sds43G"
+   }
   },
   {
    "id": "wx-pave-02",
@@ -369,7 +454,12 @@
     "he": "טבעת פאווה 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-02.mp4",
-   "img": "/media/rings/pave-02.jpg"
+   "img": "/media/rings/pave-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/6oU8wOgQkaBDcTn2ymds43H",
+    "usd": "https://buy.stripe.com/fZucN48jO7pr2eJgpcds43I",
+    "ils": "https://buy.stripe.com/28E6oGgQk8tvg5z2ymds43J"
+   }
   },
   {
    "id": "wx-pave-01",
@@ -383,7 +473,12 @@
     "he": "טבעת פאווה 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/pave-01.mp4",
-   "img": "/media/rings/pave-01.jpg"
+   "img": "/media/rings/pave-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/4gMcN42ZudNP9Hb4Guds43K",
+    "usd": "https://buy.stripe.com/cNieVc7fKbFH5qVeh4ds43L",
+    "ils": "https://buy.stripe.com/14A9AS7fKbFHdXreh4ds43M"
+   }
   },
   {
    "id": "wx-bridal-set-03",
@@ -397,7 +492,12 @@
     "he": "טבעת סט כלה 3 · זהב 14k · יהלום"
    },
    "video": "/media/rings/bridal-set-03.mp4",
-   "img": "/media/rings/bridal-set-03.jpg"
+   "img": "/media/rings/bridal-set-03.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cIeVcdE8cJLdXrb4Sds43N",
+    "usd": "https://buy.stripe.com/4gM5kC43y5hjf1v1uids43O",
+    "ils": "https://buy.stripe.com/dRm00i9nS6lnbPj4Guds43P"
+   }
   },
   {
    "id": "wx-bridal-set-02",
@@ -411,7 +511,12 @@
     "he": "טבעת סט כלה 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/bridal-set-02.mp4",
-   "img": "/media/rings/bridal-set-02.jpg"
+   "img": "/media/rings/bridal-set-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/fZu6oGbw08tv5qV8WKds43Q",
+    "usd": "https://buy.stripe.com/3cI14m1Vqh015qV2ymds43R",
+    "ils": "https://buy.stripe.com/7sYeVcdE85hj4mRb4Sds43S"
+   }
   },
   {
    "id": "wx-bridal-set-01",
@@ -425,7 +530,12 @@
     "he": "טבעת סט כלה 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/bridal-set-01.mp4",
-   "img": "/media/rings/bridal-set-01.jpg"
+   "img": "/media/rings/bridal-set-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/aFa7sK43y5hj4mRdd0ds43T",
+    "usd": "https://buy.stripe.com/4gM00iarWbFHaLfeh4ds43U",
+    "ils": "https://buy.stripe.com/dRm7sKdE8bFHf1v1uids43V"
+   }
   },
   {
    "id": "wx-bezel-02",
@@ -439,7 +549,12 @@
     "he": "טבעת בזל 2 · זהב 14k · יהלום"
    },
    "video": "/media/rings/bezel-02.mp4",
-   "img": "/media/rings/bezel-02.jpg"
+   "img": "/media/rings/bezel-02.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/eVq9AS9nSh015qVc8Wds43W",
+    "usd": "https://buy.stripe.com/4gMcN46bG4dfg5z0qeds43X",
+    "ils": "https://buy.stripe.com/00w4gygQkfVXcTn3Cqds43Y"
+   }
   },
   {
    "id": "wx-bezel-01",
@@ -453,7 +568,12 @@
     "he": "טבעת בזל 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/bezel-01.mp4",
-   "img": "/media/rings/bezel-01.jpg"
+   "img": "/media/rings/bezel-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cIcN4cA45hjdXr6OCds43Z",
+    "usd": "https://buy.stripe.com/dRm4gyfMg4df4mR5Kyds440",
+    "ils": "https://buy.stripe.com/cNidR88jOeRT06B0qeds441"
+   }
   },
   {
    "id": "wx-solitaire-01",
@@ -467,7 +587,12 @@
     "he": "טבעת סוליטר 1 · זהב 14k · יהלום"
    },
    "video": "/media/rings/solitaire-01.mp4",
-   "img": "/media/rings/solitaire-01.jpg"
+   "img": "/media/rings/solitaire-01.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/5kQ28q2Zu8tvg5z1uids442",
+    "usd": "https://buy.stripe.com/cNi4gy6bG5hj2eJa0Ods443",
+    "ils": "https://buy.stripe.com/14A8wObw06lng5z7SGds444"
+   }
   },
   {
    "id": "wx-dia-round",
@@ -481,7 +606,12 @@
     "he": "יהלום עגול · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/round.mp4",
-   "img": "/media/woodeex/round.jpg"
+   "img": "/media/woodeex/round.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/7sYfZgdE86lng5z7SGds445",
+    "usd": "https://buy.stripe.com/9B68wOgQk2576uZ6OCds446",
+    "ils": "https://buy.stripe.com/3cI7sKdE8aBD6uZ6OCds447"
+   }
   },
   {
    "id": "wx-dia-oval",
@@ -495,7 +625,12 @@
     "he": "יהלום אובל · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/oval.mp4",
-   "img": "/media/woodeex/oval.jpg"
+   "img": "/media/woodeex/oval.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cI3cu7fK39b6uZ6OCds500",
+    "usd": "https://buy.stripe.com/4gM5kCfMgaBD06Bdd0ds501",
+    "ils": "https://buy.stripe.com/bJedR88jO8tv4mRdd0ds502"
+   }
   },
   {
    "id": "wx-dia-pear",
@@ -509,7 +644,12 @@
     "he": "יהלום אגס · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/pear.mp4",
-   "img": "/media/woodeex/pear.jpg"
+   "img": "/media/woodeex/pear.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/8x2fZg9nSeRT9Hbc8Wds503",
+    "usd": "https://buy.stripe.com/9B65kC8jOeRT4mRc8Wds504",
+    "ils": "https://buy.stripe.com/8x24gyeIcdNP9Hb7SGds505"
+   }
   },
   {
    "id": "wx-dia-marquise",
@@ -523,7 +663,12 @@
     "he": "יהלום מרקיזה · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/marquise.mp4",
-   "img": "/media/woodeex/marquise.jpg"
+   "img": "/media/woodeex/marquise.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/bJe4gybw04dfbPj6OCds506",
+    "usd": "https://buy.stripe.com/5kQfZg7fKeRT3iN4Guds507",
+    "ils": "https://buy.stripe.com/aFabJ0gQkfVXdXr1uids508"
+   }
   },
   {
    "id": "wx-dia-emerald",
@@ -537,7 +682,12 @@
     "he": "יהלום אמרלד · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/emerald.mp4",
-   "img": "/media/woodeex/emerald.jpg"
+   "img": "/media/woodeex/emerald.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/8x2fZgfMgfVXdXrb4Sds509",
+    "usd": "https://buy.stripe.com/eVq28qarW7prbPj4Guds50a",
+    "ils": "https://buy.stripe.com/3cI00i57C4dfdXr2ymds50b"
+   }
   },
   {
    "id": "wx-dia-princess",
@@ -551,7 +701,12 @@
     "he": "יהלום פרינסס · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/princess.mp4",
-   "img": "/media/woodeex/princess.jpg"
+   "img": "/media/woodeex/princess.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/bJe00ifMgaBD7z3fl8ds50c",
+    "usd": "https://buy.stripe.com/14A28q6bG1135qVfl8ds50d",
+    "ils": "https://buy.stripe.com/00wbJ01Vq7prdXreh4ds50e"
+   }
   },
   {
    "id": "wx-dia-cushion",
@@ -565,7 +720,12 @@
     "he": "יהלום קושן · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/cushion.mp4",
-   "img": "/media/woodeex/cushion.jpg"
+   "img": "/media/woodeex/cushion.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cIaEWdE8h01f1vb4Sds50f",
+    "usd": "https://buy.stripe.com/9B65kCfMgbFH9Hb1uids50g",
+    "ils": "https://buy.stripe.com/cNi4gy0RmfVXf1v6OCds50h"
+   }
   },
   {
    "id": "wx-dia-asscher",
@@ -579,7 +739,12 @@
     "he": "יהלום אשר · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/asscher.mp4",
-   "img": "/media/woodeex/asscher.jpg"
+   "img": "/media/woodeex/asscher.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/3cI8wObw0257f1v3Cqds50i",
+    "usd": "https://buy.stripe.com/4gM28q1VqeRTbPj3Cqds50j",
+    "ils": "https://buy.stripe.com/3cIaEWarW39bdXr6OCds50k"
+   }
   },
   {
    "id": "wx-dia-radiant",
@@ -593,7 +758,12 @@
     "he": "יהלום רדיאנט · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/radiant.mp4",
-   "img": "/media/woodeex/radiant.jpg"
+   "img": "/media/woodeex/radiant.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/bJe5kCdE89xzbPj0qeds50l",
+    "usd": "https://buy.stripe.com/5kQfZg7fK11306B2ymds50m",
+    "ils": "https://buy.stripe.com/6oU3cugQk8tv9Hbdd0ds50n"
+   }
   },
   {
    "id": "wx-dia-heart",
@@ -607,7 +777,12 @@
     "he": "יהלום לב · 1 קראט · D-VVS"
    },
    "video": "/media/woodeex/heart.mp4",
-   "img": "/media/woodeex/heart.jpg"
+   "img": "/media/woodeex/heart.jpg",
+   "links": {
+    "eur": "https://buy.stripe.com/cNidR88jObFH2eJa0Ods50o",
+    "usd": "https://buy.stripe.com/5kQeVc7fK8tvg5z8WKds50p",
+    "ils": "https://buy.stripe.com/14A5kCfMgdNP3iN0qeds50q"
+   }
   }
  ]
 }

@@ -44,6 +44,7 @@ const fmt = (ils, rates) => new Intl.NumberFormat(LANG === 'he' ? 'he-IL' : LANG
 const BASE = location.pathname.replace(/\/(fr|en|he)\/?.*$/, '');
 const data = await (await fetch(BASE + '/data.json')).json();
 const state = { continent: 'middle_east', filter: 'all', tier: 0 };
+const p0 = (id) => data.pieces.find(x => x.id === id);
 const tierOf = (p) => data.tiers.findIndex(t => t.id === p.tier);
 
 function renderContinents() {
@@ -76,6 +77,7 @@ function renderGrid() {
   grid.querySelectorAll('video').forEach(v => { const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause(); }, { rootMargin: '200px', threshold: .05 }); io.observe(v); });
   grid.querySelectorAll('[data-buy]').forEach(b => b.onclick = async () => {
     b.disabled = true;
+    if (p0(b.dataset.buy)?.links?.[CUR]) { location.href = p0(b.dataset.buy).links[CUR]; return; }
     try {
       const API = location.hostname.endsWith('github.io') ? 'https://dream-jewels-dreamnova.vercel.app/api/checkout' : '/api/checkout';
       const r = await fetch(API, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: b.dataset.buy, lang: LANG }) });
