@@ -149,11 +149,11 @@ const texLoader = new THREE.TextureLoader();
 const boards = [];
 const camRad = (pm) => 20 - pm * 12, camAng = (pm) => pm * 6.0, camAlt = (pm) => pm * (H + 2.5);
 sorted.forEach((p, i) => {
-  const t = (i + .5) / sorted.length; const ang = camAng(t) + (document.documentElement.dir === 'rtl' ? -.32 : .32), rad = camRad(t) - 4.5; const x = Math.cos(ang) * rad, z = Math.sin(ang) * rad; const y = Math.max(hAt(x, z) + 1.2, camAlt(t) + .9);
+  const t = (i + .5) / sorted.length; const ang = camAng(t) + (document.documentElement.dir === 'rtl' ? -.32 : .32), rad = camRad(t) - 5.2; const x = Math.cos(ang) * rad, z = Math.sin(ang) * rad; const y = Math.max(hAt(x, z) + 1.2, camAlt(t) + .9);
   const g = new THREE.Group(); g.position.set(x, y, z);
   const tex = texLoader.load(BASE + p.img); tex.colorSpace = THREE.SRGBColorSpace;
-  const pic = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.5), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); g.add(pic);
-  const frame = new THREE.Mesh(new THREE.PlaneGeometry(1.62, 1.62), new THREE.MeshBasicMaterial({ color: 0xd8b86a })); frame.position.z = -.012; g.add(frame);
+  const pic = new THREE.Mesh(new THREE.PlaneGeometry(1.15, 1.15), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); g.add(pic);
+  const frame = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ color: 0xd8b86a })); frame.position.z = -.012; g.add(frame);
   const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xf2dca2, transparent: true, opacity: .55, depthWrite: false })); halo.scale.set(3.4, 3.4, 1); halo.position.z = -.05; g.add(halo);
   g.userData = { p, t }; mtn.add(g); boards.push(g);
 });
@@ -193,9 +193,9 @@ function frame() {
   }
   if (mtn.visible) {
     const pm = prog(secMtn), alt = camAlt(pm), ang = camAng(pm), rad = camRad(pm);
-    cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .25) * (rad - 4.5) * .5, alt + .9, Math.sin(ang + .25) * (rad - 4.5) * .5);
+    cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .25) * (rad - 5.2) * .5, alt + .9, Math.sin(ang + .25) * (rad - 5.2) * .5);
     clouds.children.forEach((s, i) => { s.position.x += Math.sin(t * .2 + i) * .002; });
-    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .09; const op = THREE.MathUtils.clamp(1 - (dd - .03) / .06, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
+    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .06; const op = THREE.MathUtils.clamp(1 - (dd - .015) / .045, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
     setFocus(best); summit.rotation.y += dt * .5;
     const ti = data.tiers.reduce((acc, tr, i) => pm >= tr.alt - .08 ? i : acc, 0); if (ti !== state.tier) { state.tier = ti; renderTiers(); }
   }
