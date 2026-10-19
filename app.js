@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { feature } from 'https://esm.sh/topojson-client@3.1.0';
 
 // ---------- i18n ----------
-const LANG = (location.pathname.match(/^\/(fr|en|he)\b/) || [, 'fr'])[1];
+const LANG = (location.pathname.match(/\/(fr|en|he)\/?$/) || [, 'fr'])[1];
 const CUR = { fr: 'eur', en: 'usd', he: 'ils' }[LANG];
 const SYM = { eur: '€', usd: '$', ils: '₪' }[CUR];
 const WA = '972584921492';
