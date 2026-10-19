@@ -1,0 +1,613 @@
+{
+ "rates": {
+  "ils": 1,
+  "eur": 0.25,
+  "usd": 0.27
+ },
+ "continents": [
+  {
+   "id": "middle_east",
+   "lat": 31.77,
+   "lon": 35.21,
+   "open": true,
+   "name": {
+    "fr": "Moyen-Orient · Israël",
+    "en": "Middle East · Israel",
+    "he": "המזרח התיכון · ישראל"
+   }
+  },
+  {
+   "id": "europe",
+   "lat": 48.86,
+   "lon": 2.35,
+   "open": false,
+   "name": {
+    "fr": "Europe · Paris, Anvers, Genève",
+    "en": "Europe · Paris, Antwerp, Geneva",
+    "he": "אירופה · פריז, אנטוורפן, ז'נבה"
+   }
+  },
+  {
+   "id": "north_america",
+   "lat": 40.71,
+   "lon": -74.0,
+   "open": false,
+   "name": {
+    "fr": "Amérique du Nord · New York, Montréal",
+    "en": "North America · New York, Montreal",
+    "he": "צפון אמריקה · ניו יורק, מונטריאול"
+   }
+  },
+  {
+   "id": "asia",
+   "lat": 19.07,
+   "lon": 72.88,
+   "open": false,
+   "name": {
+    "fr": "Asie · Mumbai, Hong Kong, Tokyo",
+    "en": "Asia · Mumbai, Hong Kong, Tokyo",
+    "he": "אסיה · מומבאי, הונג קונג, טוקיו"
+   }
+  },
+  {
+   "id": "africa",
+   "lat": -26.2,
+   "lon": 28.04,
+   "open": false,
+   "name": {
+    "fr": "Afrique · Johannesbourg, Gaborone",
+    "en": "Africa · Johannesburg, Gaborone",
+    "he": "אפריקה · יוהנסבורג, גבורונה"
+   }
+  }
+ ],
+ "jewelers": [
+  {
+   "id": "woodeex",
+   "continent": "middle_east",
+   "city": "Israël",
+   "site": "https://woodeex.com",
+   "verified": true,
+   "name": "Woodeex — the worldwide diamond exchange",
+   "blurb": {
+    "fr": "Atelier israélien de diamants naturels et de laboratoire, or 14k/18k. Partenaire vérifié : David y a lui-même acheté une bague de fiançailles.",
+    "en": "Israeli atelier for natural and lab-grown diamonds, 14k/18k gold. Verified partner: David bought his own engagement ring here.",
+    "he": "סטודיו ישראלי ליהלומים טבעיים ומעבדה, זהב 14k/18k. שותף מאומת: דוד קנה כאן את טבעת האירוסין שלו."
+   }
+  }
+ ],
+ "tiers": [
+  {
+   "id": "base",
+   "max": 4500,
+   "alt": 0.05,
+   "name": {
+    "fr": "Camp de base",
+    "en": "Base camp",
+    "he": "מחנה בסיס"
+   }
+  },
+  {
+   "id": "foret",
+   "max": 8000,
+   "alt": 0.35,
+   "name": {
+    "fr": "La forêt",
+    "en": "The forest",
+    "he": "היער"
+   }
+  },
+  {
+   "id": "nuages",
+   "max": 30000,
+   "alt": 0.68,
+   "name": {
+    "fr": "Au-dessus des nuages",
+    "en": "Above the clouds",
+    "he": "מעל העננים"
+   }
+  },
+  {
+   "id": "sommet",
+   "max": null,
+   "alt": 0.97,
+   "name": {
+    "fr": "Le sommet",
+    "en": "The summit",
+    "he": "הפסגה"
+   }
+  }
+ ],
+ "pieces": [
+  {
+   "id": "wx-three-stones-03",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 10300,
+   "name": {
+    "fr": "Bague Trois pierres 3 · or 14k · diamant",
+    "en": "Three stones ring 3 · 14k gold · diamond",
+    "he": "טבעת שלוש אבנים 3 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/three-stones-03.mp4",
+   "img": "/media/rings/three-stones-03.jpg"
+  },
+  {
+   "id": "wx-three-stones-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 9950,
+   "name": {
+    "fr": "Bague Trois pierres 2 · or 14k · diamant",
+    "en": "Three stones ring 2 · 14k gold · diamond",
+    "he": "טבעת שלוש אבנים 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/three-stones-02.mp4",
+   "img": "/media/rings/three-stones-02.jpg"
+  },
+  {
+   "id": "wx-three-stones-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 9600,
+   "name": {
+    "fr": "Bague Trois pierres 1 · or 14k · diamant",
+    "en": "Three stones ring 1 · 14k gold · diamond",
+    "he": "טבעת שלוש אבנים 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/three-stones-01.mp4",
+   "img": "/media/rings/three-stones-01.jpg"
+  },
+  {
+   "id": "wx-toi-et-moi-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 9150,
+   "name": {
+    "fr": "Bague Toi et Moi 2 · or 14k · diamant",
+    "en": "Toi et Moi ring 2 · 14k gold · diamond",
+    "he": "טבעת טואה א מואה 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/toi-et-moi-02.mp4",
+   "img": "/media/rings/toi-et-moi-02.jpg"
+  },
+  {
+   "id": "wx-toi-et-moi-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 8800,
+   "name": {
+    "fr": "Bague Toi et Moi 1 · or 14k · diamant",
+    "en": "Toi et Moi ring 1 · 14k gold · diamond",
+    "he": "טבעת טואה א מואה 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/toi-et-moi-01.mp4",
+   "img": "/media/rings/toi-et-moi-01.jpg"
+  },
+  {
+   "id": "wx-halo-04",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 7500,
+   "name": {
+    "fr": "Bague Halo 4 · or 14k · diamant",
+    "en": "Halo ring 4 · 14k gold · diamond",
+    "he": "טבעת הילה 4 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/halo-04.mp4",
+   "img": "/media/rings/halo-04.jpg"
+  },
+  {
+   "id": "wx-halo-03",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 7100,
+   "name": {
+    "fr": "Bague Halo 3 · or 14k · diamant",
+    "en": "Halo ring 3 · 14k gold · diamond",
+    "he": "טבעת הילה 3 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/halo-03.mp4",
+   "img": "/media/rings/halo-03.jpg"
+  },
+  {
+   "id": "wx-halo-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6750,
+   "name": {
+    "fr": "Bague Halo 2 · or 14k · diamant",
+    "en": "Halo ring 2 · 14k gold · diamond",
+    "he": "טבעת הילה 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/halo-02.mp4",
+   "img": "/media/rings/halo-02.jpg"
+  },
+  {
+   "id": "wx-halo-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6400,
+   "name": {
+    "fr": "Bague Halo 1 · or 14k · diamant",
+    "en": "Halo ring 1 · 14k gold · diamond",
+    "he": "טבעת הילה 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/halo-01.mp4",
+   "img": "/media/rings/halo-01.jpg"
+  },
+  {
+   "id": "wx-east-west-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 5250,
+   "name": {
+    "fr": "Bague East-West 2 · or 14k · diamant",
+    "en": "East-West ring 2 · 14k gold · diamond",
+    "he": "טבעת איסט-ווסט 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/east-west-02.mp4",
+   "img": "/media/rings/east-west-02.jpg"
+  },
+  {
+   "id": "wx-east-west-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 4900,
+   "name": {
+    "fr": "Bague East-West 1 · or 14k · diamant",
+    "en": "East-West ring 1 · 14k gold · diamond",
+    "he": "טבעת איסט-ווסט 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/east-west-01.mp4",
+   "img": "/media/rings/east-west-01.jpg"
+  },
+  {
+   "id": "wx-pave-bis-04",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 7000,
+   "name": {
+    "fr": "Bague Pavé fin 4 · or 14k · diamant",
+    "en": "Thin pavé ring 4 · 14k gold · diamond",
+    "he": "טבעת פאווה דק 4 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-bis-04.mp4",
+   "img": "/media/rings/pave-bis-04.jpg"
+  },
+  {
+   "id": "wx-pave-bis-03",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6600,
+   "name": {
+    "fr": "Bague Pavé fin 3 · or 14k · diamant",
+    "en": "Thin pavé ring 3 · 14k gold · diamond",
+    "he": "טבעת פאווה דק 3 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-bis-03.mp4",
+   "img": "/media/rings/pave-bis-03.jpg"
+  },
+  {
+   "id": "wx-pave-bis-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6250,
+   "name": {
+    "fr": "Bague Pavé fin 2 · or 14k · diamant",
+    "en": "Thin pavé ring 2 · 14k gold · diamond",
+    "he": "טבעת פאווה דק 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-bis-02.mp4",
+   "img": "/media/rings/pave-bis-02.jpg"
+  },
+  {
+   "id": "wx-pave-bis-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 5900,
+   "name": {
+    "fr": "Bague Pavé fin 1 · or 14k · diamant",
+    "en": "Thin pavé ring 1 · 14k gold · diamond",
+    "he": "טבעת פאווה דק 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-bis-01.mp4",
+   "img": "/media/rings/pave-bis-01.jpg"
+  },
+  {
+   "id": "wx-pave-04",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6700,
+   "name": {
+    "fr": "Bague Pavé 4 · or 14k · diamant",
+    "en": "Pavé ring 4 · 14k gold · diamond",
+    "he": "טבעת פאווה 4 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-04.mp4",
+   "img": "/media/rings/pave-04.jpg"
+  },
+  {
+   "id": "wx-pave-03",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 6300,
+   "name": {
+    "fr": "Bague Pavé 3 · or 14k · diamant",
+    "en": "Pavé ring 3 · 14k gold · diamond",
+    "he": "טבעת פאווה 3 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-03.mp4",
+   "img": "/media/rings/pave-03.jpg"
+  },
+  {
+   "id": "wx-pave-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 5950,
+   "name": {
+    "fr": "Bague Pavé 2 · or 14k · diamant",
+    "en": "Pavé ring 2 · 14k gold · diamond",
+    "he": "טבעת פאווה 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-02.mp4",
+   "img": "/media/rings/pave-02.jpg"
+  },
+  {
+   "id": "wx-pave-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 5600,
+   "name": {
+    "fr": "Bague Pavé 1 · or 14k · diamant",
+    "en": "Pavé ring 1 · 14k gold · diamond",
+    "he": "טבעת פאווה 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/pave-01.mp4",
+   "img": "/media/rings/pave-01.jpg"
+  },
+  {
+   "id": "wx-bridal-set-03",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 8600,
+   "name": {
+    "fr": "Bague Parure de mariée 3 · or 14k · diamant",
+    "en": "Bridal set ring 3 · 14k gold · diamond",
+    "he": "טבעת סט כלה 3 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/bridal-set-03.mp4",
+   "img": "/media/rings/bridal-set-03.jpg"
+  },
+  {
+   "id": "wx-bridal-set-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 8250,
+   "name": {
+    "fr": "Bague Parure de mariée 2 · or 14k · diamant",
+    "en": "Bridal set ring 2 · 14k gold · diamond",
+    "he": "טבעת סט כלה 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/bridal-set-02.mp4",
+   "img": "/media/rings/bridal-set-02.jpg"
+  },
+  {
+   "id": "wx-bridal-set-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 7900,
+   "name": {
+    "fr": "Bague Parure de mariée 1 · or 14k · diamant",
+    "en": "Bridal set ring 1 · 14k gold · diamond",
+    "he": "טבעת סט כלה 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/bridal-set-01.mp4",
+   "img": "/media/rings/bridal-set-01.jpg"
+  },
+  {
+   "id": "wx-bezel-02",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 4550,
+   "name": {
+    "fr": "Bague Bezel 2 · or 14k · diamant",
+    "en": "Bezel ring 2 · 14k gold · diamond",
+    "he": "טבעת בזל 2 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/bezel-02.mp4",
+   "img": "/media/rings/bezel-02.jpg"
+  },
+  {
+   "id": "wx-bezel-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 4200,
+   "name": {
+    "fr": "Bague Bezel 1 · or 14k · diamant",
+    "en": "Bezel ring 1 · 14k gold · diamond",
+    "he": "טבעת בזל 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/bezel-01.mp4",
+   "img": "/media/rings/bezel-01.jpg"
+  },
+  {
+   "id": "wx-solitaire-01",
+   "jeweler": "woodeex",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 3850,
+   "name": {
+    "fr": "Bague Solitaire 1 · or 14k · diamant",
+    "en": "Solitaire ring 1 · 14k gold · diamond",
+    "he": "טבעת סוליטר 1 · זהב 14k · יהלום"
+   },
+   "video": "/media/rings/solitaire-01.mp4",
+   "img": "/media/rings/solitaire-01.jpg"
+  },
+  {
+   "id": "wx-dia-round",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5200,
+   "name": {
+    "fr": "Diamant Rond · 1 ct · D-VVS",
+    "en": "Round diamond · 1 ct · D-VVS",
+    "he": "יהלום עגול · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/round.mp4",
+   "img": "/media/woodeex/round.jpg"
+  },
+  {
+   "id": "wx-dia-oval",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5600,
+   "name": {
+    "fr": "Diamant Ovale · 1 ct · D-VVS",
+    "en": "Oval diamond · 1 ct · D-VVS",
+    "he": "יהלום אובל · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/oval.mp4",
+   "img": "/media/woodeex/oval.jpg"
+  },
+  {
+   "id": "wx-dia-pear",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5400,
+   "name": {
+    "fr": "Diamant Poire · 1 ct · D-VVS",
+    "en": "Pear diamond · 1 ct · D-VVS",
+    "he": "יהלום אגס · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/pear.mp4",
+   "img": "/media/woodeex/pear.jpg"
+  },
+  {
+   "id": "wx-dia-marquise",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5300,
+   "name": {
+    "fr": "Diamant Marquise · 1 ct · D-VVS",
+    "en": "Marquise diamond · 1 ct · D-VVS",
+    "he": "יהלום מרקיזה · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/marquise.mp4",
+   "img": "/media/woodeex/marquise.jpg"
+  },
+  {
+   "id": "wx-dia-emerald",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 6100,
+   "name": {
+    "fr": "Diamant Émeraude · 1 ct · D-VVS",
+    "en": "Emerald cut diamond · 1 ct · D-VVS",
+    "he": "יהלום אמרלד · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/emerald.mp4",
+   "img": "/media/woodeex/emerald.jpg"
+  },
+  {
+   "id": "wx-dia-princess",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5000,
+   "name": {
+    "fr": "Diamant Princesse · 1 ct · D-VVS",
+    "en": "Princess diamond · 1 ct · D-VVS",
+    "he": "יהלום פרינסס · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/princess.mp4",
+   "img": "/media/woodeex/princess.jpg"
+  },
+  {
+   "id": "wx-dia-cushion",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5500,
+   "name": {
+    "fr": "Diamant Coussin · 1 ct · D-VVS",
+    "en": "Cushion diamond · 1 ct · D-VVS",
+    "he": "יהלום קושן · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/cushion.mp4",
+   "img": "/media/woodeex/cushion.jpg"
+  },
+  {
+   "id": "wx-dia-asscher",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 6300,
+   "name": {
+    "fr": "Diamant Asscher · 1 ct · D-VVS",
+    "en": "Asscher diamond · 1 ct · D-VVS",
+    "he": "יהלום אשר · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/asscher.mp4",
+   "img": "/media/woodeex/asscher.jpg"
+  },
+  {
+   "id": "wx-dia-radiant",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5700,
+   "name": {
+    "fr": "Diamant Radiant · 1 ct · D-VVS",
+    "en": "Radiant diamond · 1 ct · D-VVS",
+    "he": "יהלום רדיאנט · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/radiant.mp4",
+   "img": "/media/woodeex/radiant.jpg"
+  },
+  {
+   "id": "wx-dia-heart",
+   "jeweler": "woodeex",
+   "kind": "diamond_lab",
+   "tier": "foret",
+   "ils": 5900,
+   "name": {
+    "fr": "Diamant Cœur · 1 ct · D-VVS",
+    "en": "Heart diamond · 1 ct · D-VVS",
+    "he": "יהלום לב · 1 קראט · D-VVS"
+   },
+   "video": "/media/woodeex/heart.mp4",
+   "img": "/media/woodeex/heart.jpg"
+  }
+ ]
+}
