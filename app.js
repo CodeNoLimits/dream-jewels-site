@@ -43,7 +43,7 @@ const fmt = (ils, rates) => new Intl.NumberFormat(LANG === 'he' ? 'he-IL' : LANG
 // ---------- data + DOM ----------
 const BASE = location.pathname.replace(/\/(fr|en|he)\/?.*$/, '');
 const U = (x) => /^https?:/.test(x) ? x : BASE + x;
-const BUILD = '9';
+const BUILD = '10';
 const data = await (await fetch(BASE + '/data.json?b=' + BUILD)).json();
 const state = { continent: 'middle_east', filter: 'all', tier: 0 };
 const p0 = (id) => data.pieces.find(x => x.id === id);
@@ -159,7 +159,7 @@ sorted.forEach((p, i) => {
   g.userData.loadTex = () => { if (g.userData.texLoaded) return; g.userData.texLoaded = true; texLoader.load(U(p.img), (tex) => { tex.colorSpace = THREE.SRGBColorSpace; pic.material.map = tex; pic.material.color.set(0xffffff); pic.material.needsUpdate = true; g.userData.tex = tex; }); };
   const frame = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ color: 0xd8b86a })); frame.position.z = -.012; g.add(frame);
   const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xf2dca2, transparent: true, opacity: .55, depthWrite: false })); halo.scale.set(3.4, 3.4, 1); halo.position.z = -.05; g.add(halo);
-  g.userData = { p, t }; mtn.add(g); boards.push(g);
+  Object.assign(g.userData, { p, t }); mtn.add(g); boards.push(g);
 });
 // the focused piece gets a live video texture (desktop only)
 const focusVideo = document.createElement('video'); Object.assign(focusVideo, { muted: true, loop: true, playsInline: true, crossOrigin: 'anonymous', preload: 'auto' });
