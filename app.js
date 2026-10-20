@@ -43,7 +43,7 @@ const fmt = (ils, rates) => new Intl.NumberFormat(LANG === 'he' ? 'he-IL' : LANG
 // ---------- data + DOM ----------
 const BASE = location.pathname.replace(/\/(fr|en|he)\/?.*$/, '');
 const U = (x) => /^https?:/.test(x) ? x : BASE + x;
-const BUILD = '10';
+const BUILD = '11';
 const data = await (await fetch(BASE + '/data.json?b=' + BUILD)).json();
 const state = { continent: 'middle_east', filter: 'all', tier: 0 };
 const p0 = (id) => data.pieces.find(x => x.id === id);
@@ -199,7 +199,7 @@ function frame() {
     const pm = prog(secMtn), alt = camAlt(pm), ang = camAng(pm), rad = camRad(pm);
     cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .25) * (rad - 5.2) * .5, alt + .9, Math.sin(ang + .25) * (rad - 5.2) * .5);
     clouds.children.forEach((s, i) => { s.position.x += Math.sin(t * .2 + i) * .002; });
-    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .06; if (dd < .12) g.userData.loadTex(); const op = THREE.MathUtils.clamp(1 - (dd - .015) / .045, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
+    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .035; if (dd < .08) g.userData.loadTex(); const op = THREE.MathUtils.clamp(1 - (dd - .008) / .027, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
     setFocus(best); summit.rotation.y += dt * .5;
     const ti = data.tiers.reduce((acc, tr, i) => pm >= tr.alt - .08 ? i : acc, 0); if (ti !== state.tier) { state.tier = ti; renderTiers(); }
   }
