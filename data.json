@@ -42,7 +42,7 @@
    "id": "asia",
    "lat": 19.07,
    "lon": 72.88,
-   "open": false,
+   "open": true,
    "name": {
     "fr": "Asie · Mumbai, Hong Kong, Tokyo",
     "en": "Asia · Mumbai, Hong Kong, Tokyo",
@@ -164,6 +164,32 @@
     "fr": "Sélection Dream Jewels — nous commandons pour vous chez Missoma (Londres).",
     "en": "Dream Jewels selection — we order for you from Missoma (Londres).",
     "he": "מבחר Dream Jewels — אנו מזמינים עבורכם מ־Missoma (Londres)."
+   }
+  },
+  {
+   "id": "pohheng",
+   "continent": "asia",
+   "city": "Singapour",
+   "site": "https://www.pohheng.com.sg",
+   "verified": false,
+   "name": "Poh Heng",
+   "blurb": {
+    "fr": "Sélection Dream Jewels — nous commandons pour vous chez Poh Heng (Singapour).",
+    "en": "Dream Jewels selection — we order for you from Poh Heng (Singapour).",
+    "he": "מבחר Dream Jewels — אנו מזמינים עבורכם מ־Poh Heng (Singapour)."
+   }
+  },
+  {
+   "id": "giva",
+   "continent": "asia",
+   "city": "Bangalore",
+   "site": "https://www.giva.co",
+   "verified": false,
+   "name": "GIVA",
+   "blurb": {
+    "fr": "Sélection Dream Jewels — nous commandons pour vous chez GIVA (Bangalore).",
+    "en": "Dream Jewels selection — we order for you from GIVA (Bangalore).",
+    "he": "מבחר Dream Jewels — אנו מזמינים עבורכם מ־GIVA (Bangalore)."
    }
   }
  ],
@@ -2593,6 +2619,326 @@
     "eur": "https://buy.stripe.com/bJe4gyeIcdNP6uZ4Guds60q",
     "usd": "https://buy.stripe.com/bJe4gyarWeRT06B7SGds60r",
     "ils": "https://buy.stripe.com/00w14m9nS2572eJeh4ds60s"
+   }
+  },
+  {
+   "id": "pohheng-bloom-in-happiness-earrings-in-yellow-go",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "nuages",
+   "ils": 13940,
+   "name": {
+    "fr": "Bloom in Happiness Earrings in Yellow Gold (H999GROUP354V2042A)",
+    "en": "Bloom in Happiness Earrings in Yellow Gold (H999GROUP354V2042A)",
+    "he": "Bloom in Happiness Earrings in Yellow Gold (H999GROUP354V2042A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/H999GROUP354V2042A_09102026105129.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/bloom-in-happiness-earrings-in-yellow-gold-h999group354v2042a",
+   "src_price": "5068 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/8x27sK6bG5hj8D74Guds60t",
+    "usd": "https://buy.stripe.com/9B65kC0Rm39b9Hbeh4ds60u",
+    "ils": "https://buy.stripe.com/28E14meIc4df2eJdd0ds60v"
+   }
+  },
+  {
+   "id": "pohheng-dazzling-willow-earrings-in-yellow-gold-",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 1480,
+   "name": {
+    "fr": "Dazzling Willow Earrings in Yellow Gold (H999GROUP353V2041A)",
+    "en": "Dazzling Willow Earrings in Yellow Gold (H999GROUP353V2041A)",
+    "he": "Dazzling Willow Earrings in Yellow Gold (H999GROUP353V2041A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/H999GROUP353V2041A_09102026104919.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/dazzling-willow-earrings-in-yellow-gold-h999group353v2041a",
+   "src_price": "540 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/00waEW6bGdNPaLf5Kyds60w",
+    "usd": "https://buy.stripe.com/6oUbJ06bG257dXr4Guds60x",
+    "ils": "https://buy.stripe.com/cNifZg6bG6ln2eJ5Kyds60y"
+   }
+  },
+  {
+   "id": "pohheng-radiant-bloom-earrings-in-yellow-white-g",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 3010,
+   "name": {
+    "fr": "Radiant Bloom Earrings in Yellow White Gold (H22KGROUP393V2135A)",
+    "en": "Radiant Bloom Earrings in Yellow White Gold (H22KGROUP393V2135A)",
+    "he": "Radiant Bloom Earrings in Yellow White Gold (H22KGROUP393V2135A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/H22KGROUP393V2135A_09102026105623.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/radiant-bloom-earrings-in-yellow-white-gold-h22kgroup393v2135a",
+   "src_price": "1096 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/5kQeVcarWh01g5z5Kyds60z",
+    "usd": "https://buy.stripe.com/cNicN4fMgaBD4mR1uids60A",
+    "ils": "https://buy.stripe.com/5kQbJ08jO4dfg5z3Cqds60B"
+   }
+  },
+  {
+   "id": "pohheng-bloom-in-happiness-ring-in-yellow-gold-a",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "foret",
+   "ils": 7090,
+   "name": {
+    "fr": "Bloom in Happiness Ring in Yellow Gold (A999GROUP354V3074A)",
+    "en": "Bloom in Happiness Ring in Yellow Gold (A999GROUP354V3074A)",
+    "he": "Bloom in Happiness Ring in Yellow Gold (A999GROUP354V3074A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/A999GROUP354V3074A_09102026105305.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/bloom-in-happiness-ring-in-yellow-gold-a999group354v3074a",
+   "src_price": "2576 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/eVqfZg57C9xz9Hbc8Wds60C",
+    "usd": "https://buy.stripe.com/fZu8wO1Vq4df5qVa0Ods60D",
+    "ils": "https://buy.stripe.com/14A3cueIc9xzdXrb4Sds60E"
+   }
+  },
+  {
+   "id": "pohheng-dazzling-willow-ring-in-yellow-gold-a999",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 2410,
+   "name": {
+    "fr": "Dazzling Willow Ring in Yellow Gold (A999GROUP353V3073A)",
+    "en": "Dazzling Willow Ring in Yellow Gold (A999GROUP353V3073A)",
+    "he": "Dazzling Willow Ring in Yellow Gold (A999GROUP353V3073A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/A999GROUP353V3073A_09102026104759.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/dazzling-willow-ring-in-yellow-gold-a999group353v3073a",
+   "src_price": "876 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/3cI8wObw0257cTnfl8ds60F",
+    "usd": "https://buy.stripe.com/bJeaEW1VqdNPbPjfl8ds60G",
+    "ils": "https://buy.stripe.com/eVqfZg8jO6lnf1vfl8ds60H"
+   }
+  },
+  {
+   "id": "pohheng-radiant-bloom-ring-in-yellow-white-gold-",
+   "jeweler": "pohheng",
+   "kind": "gold_diamond",
+   "tier": "base",
+   "ils": 3170,
+   "name": {
+    "fr": "Radiant Bloom Ring in Yellow White Gold (A22KGROUP393V3137A)",
+    "en": "Radiant Bloom Ring in Yellow White Gold (A22KGROUP393V3137A)",
+    "he": "Radiant Bloom Ring in Yellow White Gold (A22KGROUP393V3137A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/A22KGROUP393V3137A_09102026105803.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/radiant-bloom-ring-in-yellow-white-gold-a22kgroup393v3137a",
+   "src_price": "1154 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/aFa28q1Vq5hj06Ba0Ods60I",
+    "usd": "https://buy.stripe.com/aFa7sK57C4df3iN7SGds60J",
+    "ils": "https://buy.stripe.com/cNi4gy6bG257dXr1uids60K"
+   }
+  },
+  {
+   "id": "pohheng-blue-sapphire-with-diamond-earrings-in-w",
+   "jeweler": "pohheng",
+   "kind": "diamond_nat",
+   "tier": "nuages",
+   "ils": 8250,
+   "name": {
+    "fr": "Blue Sapphire with Diamond Earrings in White Gold (HSAPSTYLE1717A)",
+    "en": "Blue Sapphire with Diamond Earrings in White Gold (HSAPSTYLE1717A)",
+    "he": "Blue Sapphire with Diamond Earrings in White Gold (HSAPSTYLE1717A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/HSAPSTYLE1717A_07102026093053.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/blue-sapphire-with-diamond-earrings-in-white-gold-hsapstyle1717a",
+   "src_price": "3000 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/4gMdR81Vqh01g5za0Ods60L",
+    "usd": "https://buy.stripe.com/bJe6oG9nS113g5z5Kyds60M",
+    "ils": "https://buy.stripe.com/dRm9AS8jObFH1aFgpcds60N"
+   }
+  },
+  {
+   "id": "pohheng-light-embrace-pear-diamond-earrings-in-y",
+   "jeweler": "pohheng",
+   "kind": "diamond_nat",
+   "tier": "base",
+   "ils": 4260,
+   "name": {
+    "fr": "Light Embrace Pear Diamond Earrings in Yellow Gold (HDIAGROUP245V1676A)",
+    "en": "Light Embrace Pear Diamond Earrings in Yellow Gold (HDIAGROUP245V1676A)",
+    "he": "Light Embrace Pear Diamond Earrings in Yellow Gold (HDIAGROUP245V1676A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/HDIAGROUP245V1676A_07102026084143.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/light-embrace-pear-diamond-earrings-in-yellow-gold-hdiagroup245v1676a",
+   "src_price": "1550 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/4gM5kC2Zu113f1v5Kyds60O",
+    "usd": "https://buy.stripe.com/00w5kC0Rm113dXr3Cqds60P",
+    "ils": "https://buy.stripe.com/14A3cubw0dNP5qV3Cqds60Q"
+   }
+  },
+  {
+   "id": "pohheng-artful-spark-diamond-earrings-in-white-g",
+   "jeweler": "pohheng",
+   "kind": "diamond_nat",
+   "tier": "base",
+   "ils": 3710,
+   "name": {
+    "fr": "Artful Spark Diamond Earrings in White Gold (HDIAFREESTYLE1654A)",
+    "en": "Artful Spark Diamond Earrings in White Gold (HDIAFREESTYLE1654A)",
+    "he": "Artful Spark Diamond Earrings in White Gold (HDIAFREESTYLE1654A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/HDIAFREESTYLE1654A_07102026084719.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/artful-spark-diamond-earrings-in-white-gold-hdiafreestyle1654a",
+   "src_price": "1350 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/8x2cN457Ch015qV1uids60R",
+    "usd": "https://buy.stripe.com/aFa7sKdE81136uZ3Cqds60S",
+    "ils": "https://buy.stripe.com/aFaaEW9nS5hj5qV7SGds60T"
+   }
+  },
+  {
+   "id": "pohheng-blue-sapphire-with-diamond-ring-in-white",
+   "jeweler": "pohheng",
+   "kind": "diamond_nat",
+   "tier": "base",
+   "ils": 4400,
+   "name": {
+    "fr": "Blue Sapphire with Diamond Ring in White Gold (ASAPSTYLE1122A)",
+    "en": "Blue Sapphire with Diamond Ring in White Gold (ASAPSTYLE1122A)",
+    "he": "Blue Sapphire with Diamond Ring in White Gold (ASAPSTYLE1122A)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0582/5855/4964/files/ASAPSTYLE1122A_07102026092430.jpg?width=900",
+   "url": "https://www.pohheng.com.sg/products/blue-sapphire-with-diamond-ring-in-white-gold-asapstyle1122a",
+   "src_price": "1600 SGD",
+   "links": {
+    "eur": "https://buy.stripe.com/3cIbJ043y257aLf3Cqds60U",
+    "usd": "https://buy.stripe.com/7sY4gy1VqaBDaLf1uids60V",
+    "ils": "https://buy.stripe.com/3cI3cucA47prg5zgpcds60W"
+   }
+  },
+  {
+   "id": "giva-golden-abstract-dew-earrings",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 540,
+   "name": {
+    "fr": "Golden Abstract Dew Earrings",
+    "en": "Golden Abstract Dew Earrings",
+    "he": "Golden Abstract Dew Earrings"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/ER04178_1.jpg?width=900",
+   "url": "https://www.giva.co/products/golden-abstract-dew-earrings",
+   "src_price": "12199 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/9B600i7fK6ln4mR3Cqds60X",
+    "usd": "https://buy.stripe.com/8x25kCgQkfVX5qV1uids60Y",
+    "ils": "https://buy.stripe.com/4gMfZgcA46ln7z32ymds60Z"
+   }
+  },
+  {
+   "id": "giva-silver-blue-daisy-necklace",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 520,
+   "name": {
+    "fr": "Silver Blue Daisy Necklace",
+    "en": "Silver Blue Daisy Necklace",
+    "he": "Silver Blue Daisy Necklace"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/PD01819_1_2030170f-1093-4b0c-a592-101e733790ce.jpg?width=900",
+   "url": "https://www.giva.co/products/silver-blue-daisy-necklace",
+   "src_price": "11899 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/dRm4gy0Rm39b06B5Kyds610",
+    "usd": "https://buy.stripe.com/4gM9ASbw0eRT5qV8WKds611",
+    "ils": "https://buy.stripe.com/fZu28q0Rm39bf1v6OCds612"
+   }
+  },
+  {
+   "id": "giva-golden-flower-cluster-bangle-size-2-4",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 530,
+   "name": {
+    "fr": "Golden Flower Cluster Bangle (Size 2.4)",
+    "en": "Golden Flower Cluster Bangle (Size 2.4)",
+    "he": "Golden Flower Cluster Bangle (Size 2.4)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/BR01556_1.jpg?width=900",
+   "url": "https://www.giva.co/products/golden-flower-cluster-bangle-size-2-4",
+   "src_price": "12099 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/5kQaEWdE8eRT3iN7SGds613",
+    "usd": "https://buy.stripe.com/9B6dR86bG39b2eJfl8ds614",
+    "ils": "https://buy.stripe.com/5kQ5kC43y4dfdXr4Guds615"
+   }
+  },
+  {
+   "id": "giva-silver-stayin-alive-cuff-bracelet",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 340,
+   "name": {
+    "fr": "Silver Stayin' Alive Cuff Bracelet",
+    "en": "Silver Stayin' Alive Cuff Bracelet",
+    "he": "Silver Stayin' Alive Cuff Bracelet"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/BR01399_1_714dfeff-7417-4a1f-bee2-5de71876edf5.jpg?width=900",
+   "url": "https://www.giva.co/products/silver-stayin-alive-cuff-bracelet",
+   "src_price": "7699 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/3cI8wOeIcdNP06B8WKds616",
+    "usd": "https://buy.stripe.com/dRm6oG0RmeRTaLf3Cqds617",
+    "ils": "https://buy.stripe.com/eVqaEWbw09xz8D7c8Wds618"
+   }
+  },
+  {
+   "id": "giva-rose-gold-rising-radiance-bangle",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 370,
+   "name": {
+    "fr": "Rose Gold Rising Radiance Bangle",
+    "en": "Rose Gold Rising Radiance Bangle",
+    "he": "Rose Gold Rising Radiance Bangle"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/BR0841_1-min_1e210f30-d964-4bfd-b1e6-69c603e9794f.jpg?width=900",
+   "url": "https://www.giva.co/products/rose-gold-rising-radiance-bangle",
+   "src_price": "8399 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/cNi3cueIc4dfaLf3Cqds619",
+    "usd": "https://buy.stripe.com/eVqaEWbw0cJLf1v4Guds61a",
+    "ils": "https://buy.stripe.com/9B69ASdE839baLf3Cqds61b"
+   }
+  },
+  {
+   "id": "giva-golden-samratya-bangle-size-2-4",
+   "jeweler": "giva",
+   "kind": "silver",
+   "tier": "base",
+   "ils": 390,
+   "name": {
+    "fr": "Golden Samratya Bangle (Size 2.4)",
+    "en": "Golden Samratya Bangle (Size 2.4)",
+    "he": "Golden Samratya Bangle (Size 2.4)"
+   },
+   "img": "https://cdn.shopify.com/s/files/1/0061/8378/0442/files/BR01736_1.jpg?width=900",
+   "url": "https://www.giva.co/products/golden-samratya-bangle-size-2-4",
+   "src_price": "8799 INR",
+   "links": {
+    "eur": "https://buy.stripe.com/fZu00i2Zu7pr6uZ0qeds61c",
+    "usd": "https://buy.stripe.com/5kQfZg7fK5hj5qV0qeds61d",
+    "ils": "https://buy.stripe.com/dRm4gyeIc257cTn8WKds61e"
    }
   }
  ]

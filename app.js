@@ -147,15 +147,15 @@ const clouds = new THREE.Group(); mtn.add(clouds);
 const glowTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'); const gr = x.createRadialGradient(64, 64, 2, 64, 64, 64); gr.addColorStop(0, 'rgba(255,245,225,1)'); gr.addColorStop(.45, 'rgba(255,240,215,.35)'); gr.addColorStop(1, 'rgba(255,240,215,0)'); x.fillStyle = gr; x.fillRect(0, 0, 128, 128); return new THREE.CanvasTexture(c); })();
 for (let i = 0; i < 90; i++) { const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, opacity: .5, depthWrite: false })); const a = Math.random() * Math.PI * 2, r = 4 + Math.random() * 11; sp.position.set(Math.cos(a) * r, H * .5 + (Math.random() - .5) * 2, Math.sin(a) * r); sp.scale.set(3.5 + Math.random() * 4, 1.4 + Math.random() * 1.2, 1); clouds.add(sp); }
 // REAL JEWELS on the mountain: one framed billboard per piece along the camera spiral
-const allSorted = [...data.pieces].sort((a, b) => a.ils - b.ils); const MAXB = 48; const sorted = allSorted.length <= MAXB ? allSorted : allSorted.filter((_, i) => i % Math.ceil(allSorted.length / MAXB) === 0).slice(0, MAXB);
+const allSorted = [...data.pieces].sort((a, b) => a.ils - b.ils); const sorted = allSorted;
 const texLoader = new THREE.TextureLoader();
 const boards = [];
 const camRad = (pm) => 20 - pm * 12, camAng = (pm) => pm * 6.0, camAlt = (pm) => pm * (H + 2.5);
 sorted.forEach((p, i) => {
   const t = (i + .5) / sorted.length; const ang = camAng(t) + (document.documentElement.dir === 'rtl' ? -.32 : .32), rad = camRad(t) - 5.2; const x = Math.cos(ang) * rad, z = Math.sin(ang) * rad; const y = Math.max(hAt(x, z) + 1.2, camAlt(t) + .9);
   const g = new THREE.Group(); g.position.set(x, y, z);
-  const tex = texLoader.load(U(p.img)); tex.colorSpace = THREE.SRGBColorSpace;
-  const pic = new THREE.Mesh(new THREE.PlaneGeometry(1.15, 1.15), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); g.add(pic);
+  const pic = new THREE.Mesh(new THREE.PlaneGeometry(1.15, 1.15), new THREE.MeshBasicMaterial({ color: 0x1a1720, toneMapped: false })); g.add(pic);
+  g.userData.loadTex = () => { if (g.userData.texLoaded) return; g.userData.texLoaded = true; texLoader.load(U(p.img), (tex) => { tex.colorSpace = THREE.SRGBColorSpace; pic.material.map = tex; pic.material.color.set(0xffffff); pic.material.needsUpdate = true; g.userData.tex = tex; }); };
   const frame = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 1.25), new THREE.MeshBasicMaterial({ color: 0xd8b86a })); frame.position.z = -.012; g.add(frame);
   const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xf2dca2, transparent: true, opacity: .55, depthWrite: false })); halo.scale.set(3.4, 3.4, 1); halo.position.z = -.05; g.add(halo);
   g.userData = { p, t }; mtn.add(g); boards.push(g);
@@ -165,9 +165,9 @@ const focusVideo = document.createElement('video'); Object.assign(focusVideo, { 
 const focusTex = new THREE.VideoTexture(focusVideo); focusTex.colorSpace = THREE.SRGBColorSpace;
 let focusIdx = -1;
 function setFocus(i) {
-  if (i === focusIdx) return; const prev = boards[focusIdx]; if (prev) { prev.children[0].material.map = prev.userData.tex || prev.children[0].material.map; prev.children[0].material.needsUpdate = true; prev.scale.setScalar(1); }
+  if (i === focusIdx) return; const prev = boards[focusIdx]; if (prev) { if (prev.userData.tex) prev.children[0].material.map = prev.userData.tex; prev.children[0].material.needsUpdate = true; prev.scale.setScalar(1); }
   focusIdx = i; const g = boards[i], p = g.userData.p; g.scale.setScalar(1.35);
-  if (!mobile && p.video) { g.userData.tex = g.children[0].material.map; focusVideo.src = U(p.video); focusVideo.play().catch(() => {}); g.children[0].material.map = focusTex; g.children[0].material.needsUpdate = true; }
+  if (!mobile && p.video) { focusVideo.src = U(p.video); focusVideo.play().catch(() => {}); g.children[0].material.map = focusTex; g.children[0].material.needsUpdate = true; }
   const j = data.jewelers.find(x => x.id === p.jeweler);
   document.getElementById('focus').innerHTML = `<img src="${U(p.img)}" alt=""><div><h3>${p.name[LANG]}</h3><div class="jw">${j.name.split(' — ')[0]} · ${j.verified ? '✓ ' + T.verified : T.selection}</div><div class="price">${T.from} ${fmt(p.ils, data.rates)}</div><button class="btn solid" data-buy="${p.id}">${T.reserve}</button></div>`;
   document.querySelector('#focus [data-buy]').onclick = () => document.querySelector(`#grid [data-buy="${p.id}"]`)?.click() || location.assign('#catalogue');
@@ -198,7 +198,7 @@ function frame() {
     const pm = prog(secMtn), alt = camAlt(pm), ang = camAng(pm), rad = camRad(pm);
     cam.position.set(Math.cos(ang) * rad, alt + 2.2, Math.sin(ang) * rad); cam.lookAt(Math.cos(ang + .25) * (rad - 5.2) * .5, alt + .9, Math.sin(ang + .25) * (rad - 5.2) * .5);
     clouds.children.forEach((s, i) => { s.position.x += Math.sin(t * .2 + i) * .002; });
-    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .06; const op = THREE.MathUtils.clamp(1 - (dd - .015) / .045, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
+    let best = 0, bd = 1e9; boards.forEach((g, i) => { const dd = Math.abs(g.userData.t - pm); g.visible = dd < .06; if (dd < .12) g.userData.loadTex(); const op = THREE.MathUtils.clamp(1 - (dd - .015) / .045, 0, 1); g.children[0].material.opacity = g.children[1].material.opacity = op; g.children[0].material.transparent = g.children[1].material.transparent = true; g.children[2].material.opacity = .55 * op; g.quaternion.copy(cam.quaternion); g.position.y += Math.sin(t * 1.5 + i) * .0015; const d = Math.abs(g.userData.t - pm); if (d < bd) { bd = d; best = i; } });
     setFocus(best); summit.rotation.y += dt * .5;
     const ti = data.tiers.reduce((acc, tr, i) => pm >= tr.alt - .08 ? i : acc, 0); if (ti !== state.tier) { state.tier = ti; renderTiers(); }
   }
