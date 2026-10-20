@@ -43,7 +43,8 @@ const fmt = (ils, rates) => new Intl.NumberFormat(LANG === 'he' ? 'he-IL' : LANG
 // ---------- data + DOM ----------
 const BASE = location.pathname.replace(/\/(fr|en|he)\/?.*$/, '');
 const U = (x) => /^https?:/.test(x) ? x : BASE + x;
-const data = await (await fetch(BASE + '/data.json')).json();
+const BUILD = '9';
+const data = await (await fetch(BASE + '/data.json?b=' + BUILD)).json();
 const state = { continent: 'middle_east', filter: 'all', tier: 0 };
 const p0 = (id) => data.pieces.find(x => x.id === id);
 const tierOf = (p) => data.tiers.findIndex(t => t.id === p.tier);
